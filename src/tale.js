@@ -18,6 +18,6 @@ kolobok('заяц')
 
 //Задание 2
 function newYear(newName) {
-  return (`${newName}!${newName}!${newName}!`)
+  return `${newName}!${newName}!${newName}!`
 }
 console.log(newYear('Снегурочка'))
