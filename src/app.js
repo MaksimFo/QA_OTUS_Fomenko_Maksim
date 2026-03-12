@@ -38,3 +38,18 @@ export const getTotal = (items = [], discount = 0) => {
   const total = items.reduce((acc, { price, quantity }) => acc + price * quantity, 0)
   return total * (1 - discount / 100)
 }
+
+const scores = {
+  Anna: 10,
+  Olga: 5,
+  Ivan: 4
+}
+
+function getScore(scores) {
+  let sum = 0
+  for (let key in scores) {
+    sum = sum + scores[key]
+  }
+  return sum
+}
+console.log(getScore(scores))
