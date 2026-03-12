@@ -40,16 +40,16 @@ export const getTotal = (items = [], discount = 0) => {
 }
 
 const scores = {
-  "Anna": 10,
-  "Olga": 5,
-  "Ivan": 4,
+  Anna: 10,
+  Olga: 5,
+  Ivan: 4
 }
 
-function getScore (scores) {
-  let sum = 0;
+function getScore(scores) {
+  let sum = 0
   for (let key in scores) {
     sum = sum + scores[key]
   }
-    return sum;
+  return sum
 }
-console.log(getScore(scores));
+console.log(getScore(scores))
